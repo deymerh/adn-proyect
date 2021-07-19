@@ -1,47 +1,18 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow will install Deno and run tests across stable and canary builds on Windows, Ubuntu and macOS.
-# For more information see: https://github.com/denoland/setup-deno
-
-name: Deno
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
+name: GitHub Actions Demo
+on: [push]
 jobs:
-  test:
-    runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
-
-    strategy:
-      matrix:
-        deno: ["v1.x", "canary"]
-        os: [macOS-latest, windows-latest, ubuntu-latest]
-
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
     steps:
-      - name: Setup repo
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
         uses: actions/checkout@v2
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
 
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@4a4e59637fa62bd6c086a216c7e4c5b457ea9e79
-        with:
-          deno-version: ${{ matrix.deno }} # tests across multiple Deno versions
-
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      # - name: Verify formatting
-      #   run: deno fmt --check
-
-      - name: Run linter
-        run: deno lint
-
-      - name: Cache dependencies
-        run: deno cache deps.ts
-
-      - name: Run tests
-        run: deno test -A --unstable
