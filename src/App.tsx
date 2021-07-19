@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import AppRouter from './routes/AppRouter';
+import { DataContext } from './context/DataContext';
+import { DescriptionMoney } from './models/DescriptionMoney';
 
-function App() {
+const App: React.FC = () => {
+  const [globalState, updateGlobalState] = useState<DescriptionMoney>({
+    kids: 0,
+    building: 0,
+    charity: 0,
+    moneyTotal: 0,
+    donors: [],
+  });
+  useEffect(() => {
+    localStorage.setItem('globalState', JSON.stringify(globalState));
+  }, [globalState]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataContext.Provider value={{ globalState, updateGlobalState }}>
+      <AppRouter />
+    </DataContext.Provider>
   );
-}
+};
 
 export default App;
