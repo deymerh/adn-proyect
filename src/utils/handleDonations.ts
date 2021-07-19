@@ -1,6 +1,7 @@
 import { DescriptionMoney } from '../models/DescriptionMoney';
 import { data } from '../models/userDonator';
 
+// eslint-disable-next-line
 export const handleDonations = (
   values: data,
   globalState: DescriptionMoney,
