@@ -1,16 +1,14 @@
-import React, { ChangeEvent, useContext, useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { Typography, TextField, Grid, Button } from '@material-ui/core';
-import { useGlobalContext } from '../../context/DataContext';
+import { GlobalContext } from '../../../../context/DataContext';
 import { useStyles } from './styles';
-import { data } from '../../models/userDonator';
-import { handleDonations } from '../../utils/handleDonations';
+import { UserDonator } from '../../models/userDonator';
+import * as donationServices from '../../services/donationServices';
 
 export const EnvelopeDataEntryForm: React.FC = () => {
   const classes = useStyles();
-
-  const { globalState, updateGlobalState } = useGlobalContext();
-
-  const [values, setValues] = useState<data>({
+  const { globalState, updateGlobalState } = GlobalContext();
+  const [values, setValues] = useState<UserDonator>({
     name: 'Deymer',
     id: 708098,
     amount: 10000,
@@ -24,14 +22,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
     });
   };
   const handleSubmit = () => {
-    handleDonations(values, globalState, updateGlobalState);
-    setValues({
-      name: '',
-      id: 708098,
-      amount: 10000,
-      age: 17,
-      date: '',
-    });
+    donationServices.handleDonations(values, globalState, updateGlobalState);
   };
   return (
     <>
@@ -44,7 +35,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
             <TextField
               className={classes.field}
               fullWidth
-              id="outlined-basic"
+              id="name"
               label="Nombre"
               variant="outlined"
               size="small"
@@ -56,7 +47,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
             <TextField
               className={classes.field}
               fullWidth
-              id="outlined-basic"
+              id="identificacion"
               label="Identificación"
               type="number"
               variant="outlined"
@@ -69,7 +60,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
             <TextField
               className={classes.field}
               fullWidth
-              id="outlined-basic"
+              id="amount"
               label="Cantidad"
               type="number"
               variant="outlined"
@@ -82,7 +73,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
             <TextField
               className={classes.field}
               fullWidth
-              id="outlined-basic"
+              id="age"
               label="Edad"
               variant="outlined"
               size="small"
@@ -95,7 +86,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
             <TextField
               className={classes.field}
               fullWidth
-              id="outlined-basic"
+              id="date"
               variant="outlined"
               size="small"
               type="date"

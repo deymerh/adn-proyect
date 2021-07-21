@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AppRouter from './routes/AppRouter';
 import { DataContext } from './context/DataContext';
-import { DescriptionMoney } from './models/DescriptionMoney';
+import { DescriptionMoney } from './pages/FormPage/models/DescriptionMoney';
 
 const App: React.FC = () => {
   const [globalState, updateGlobalState] = useState<DescriptionMoney>({

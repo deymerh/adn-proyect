@@ -1,4 +1,4 @@
-export interface data {
+export interface UserDonator {
   name: string;
   id: number;
   amount: number;

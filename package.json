@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint --fix src/**/*.{ts,tsx}",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -44,10 +45,18 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.8",
+    "cypress": "^8.0.0",
     "eslint": "^7.31.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"
+  },
+  "standart":{
+    "globals":[
+        "describe",
+        "it",
+        "cy"
+    ]
   }
 }

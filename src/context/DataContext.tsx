@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { DescriptionMoney } from '../models/DescriptionMoney';
+import { DescriptionMoney } from '../pages/FormPage/models/DescriptionMoney';
 
 export type GlobalContent = {
   globalState: DescriptionMoney;
@@ -20,4 +20,4 @@ export const DataContext = createContext<GlobalContent>({
   },
 });
 // eslint-disable-next-line
-export const useGlobalContext = () => useContext(DataContext);
+export const GlobalContext = () => useContext(DataContext);
