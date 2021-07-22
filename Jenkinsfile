@@ -1,5 +1,5 @@
 pipeline{
-  agent: {
+  agent {
      label 'Slave_Induccion'
   }
   stages{
