@@ -1,20 +1,20 @@
 import { createContext, useContext } from 'react';
-import { DescriptionMoney } from '../pages/FormPage/models/DescriptionMoney';
+import { DepartamentosFundacion } from '../pages/FormPage/models/DepartamentosFundacion';
 
 export type GlobalContent = {
-  globalState: DescriptionMoney;
-  updateGlobalState: (p: DescriptionMoney) => void;
+  globalState: DepartamentosFundacion;
+  updateGlobalState: (p: DepartamentosFundacion) => void;
 };
 
 export const DataContext = createContext<GlobalContent>({
   globalState: {
-    kids: 0,
-    building: 0,
-    charity: 0,
-    moneyTotal: 0,
-    donors: [],
+    ninos: 0,
+    construccion: 0,
+    caridad: 0,
+    dineroTotal: 0,
+    personasDonantes: [],
   },
-  updateGlobalState: (p: DescriptionMoney) => {
+  updateGlobalState: (p: DepartamentosFundacion) => {
     // eslint-disable-next-line
     console.log('Hola');
   },

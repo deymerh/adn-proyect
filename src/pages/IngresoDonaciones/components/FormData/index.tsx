@@ -2,27 +2,31 @@ import React, { ChangeEvent, useState } from 'react';
 import { Typography, TextField, Grid, Button } from '@material-ui/core';
 import { GlobalContext } from '../../../../context/DataContext';
 import { useStyles } from './styles';
-import { UserDonator } from '../../models/userDonator';
+import { Donante } from '../../models/Donante';
 import * as donationServices from '../../services/donationServices';
 
 export const EnvelopeDataEntryForm: React.FC = () => {
   const classes = useStyles();
   const { globalState, updateGlobalState } = GlobalContext();
-  const [values, setValues] = useState<UserDonator>({
-    name: 'Deymer',
+  const [usuarioDonante, setUsuarioDonante] = useState<Donante>({
+    nombre: 'Deymer',
     id: 708098,
-    amount: 10000,
-    age: 17,
-    date: '2021-07-19',
+    cantidadDonada: 10000,
+    edad: 17,
+    fecha: '2021-07-19',
   });
   const handleInputChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-    setValues({
-      ...values,
+    setUsuarioDonante({
+      ...usuarioDonante,
       [target.name]: target.value,
     });
   };
   const handleSubmit = () => {
-    donationServices.handleDonations(values, globalState, updateGlobalState);
+    donationServices.manejadorDonaciones(
+      usuarioDonante,
+      globalState,
+      updateGlobalState,
+    );
   };
   return (
     <>
@@ -42,7 +46,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
               required
               name="name"
               onChange={handleInputChange}
-              value={values.name}
+              value={usuarioDonante.nombre}
             />
             <TextField
               className={classes.field}
@@ -54,8 +58,8 @@ export const EnvelopeDataEntryForm: React.FC = () => {
               size="small"
               name="id"
               required
+              value={usuarioDonante.id}
               onChange={handleInputChange}
-              value={values.id}
             />
             <TextField
               className={classes.field}
@@ -68,7 +72,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
               required
               name="amount"
               onChange={handleInputChange}
-              value={values.amount}
+              value={usuarioDonante.cantidadDonada}
             />
             <TextField
               className={classes.field}
@@ -81,7 +85,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
               required
               name="age"
               onChange={handleInputChange}
-              value={values.age}
+              value={usuarioDonante.edad}
             />
             <TextField
               className={classes.field}
@@ -93,7 +97,7 @@ export const EnvelopeDataEntryForm: React.FC = () => {
               name="date"
               required
               onChange={handleInputChange}
-              value={values.date}
+              value={usuarioDonante.fecha}
             />
             <Button
               className={classes.btn}
