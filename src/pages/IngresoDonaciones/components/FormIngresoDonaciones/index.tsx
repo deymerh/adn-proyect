@@ -9,11 +9,11 @@ export const IngresoDonaciones: React.FC = () => {
   const classes = useStyles();
   const { globalState, updateGlobalState } = GlobalContext();
   const [usuarioDonante, setUsuarioDonante] = useState<Donante>({
-    nombre: 'Deymer',
-    id: 708098,
-    cantidadDonada: 10000,
-    edad: 17,
-    fecha: '2021-07-19',
+    nombre: '',
+    id: 1,
+    cantidadDonada: 0,
+    edad: 0,
+    fecha: '',
   });
   const handleInputChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
     setUsuarioDonante({
@@ -44,60 +44,59 @@ export const IngresoDonaciones: React.FC = () => {
               variant="outlined"
               size="small"
               required
-              name="name"
+              name="nombre"
               onChange={handleInputChange}
-              value={usuarioDonante.nombre}
             />
             <TextField
               className={classes.field}
               fullWidth
-              id="identificacion"
+              id="id"
               label="Identificación"
               type="number"
               variant="outlined"
               size="small"
               name="id"
               required
-              value={usuarioDonante.id}
+              placeholder="Ej: 73984419"
               onChange={handleInputChange}
             />
             <TextField
               className={classes.field}
               fullWidth
-              id="amount"
+              id="cantidadDonada"
               label="Cantidad"
               type="number"
               variant="outlined"
               size="small"
               required
-              name="amount"
+              name="cantidadDonada"
               onChange={handleInputChange}
-              value={usuarioDonante.cantidadDonada}
+              placeholder="Ej: 10000"
             />
             <TextField
               className={classes.field}
               fullWidth
-              id="age"
+              id="edad"
               label="Edad"
               variant="outlined"
               size="small"
               type="number"
               required
-              name="age"
+              name="edad"
               onChange={handleInputChange}
-              value={usuarioDonante.edad}
+              placeholder="Edad del donante. Ej: 18"
             />
             <TextField
               className={classes.field}
               fullWidth
-              id="date"
+              id="fecha"
               variant="outlined"
               size="small"
               type="date"
-              name="date"
+              name="fecha"
               required
               onChange={handleInputChange}
-              value={usuarioDonante.fecha}
+              placeholder="Fecha"
             />
             <Button
               className={classes.btn}

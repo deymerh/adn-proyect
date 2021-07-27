@@ -15,7 +15,8 @@ describe('Pruebas en el componente <FormData />', () => {
   });
 
   test('Validar que existan cinco campos de entrada renderizados', () => {
-    expect(page.find('input').length).toEqual(5);
+    const cantidadDeInputs = 5;
+    expect(page.find('input').length).toEqual(cantidadDeInputs);
   });
 
   test('Comprobar la existencia del boton ´Guardar´', () => {

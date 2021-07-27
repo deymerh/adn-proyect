@@ -4,7 +4,7 @@ import { manejadorDonaciones } from './donationServices';
 
 jest.mock('./donationServices');
 
-describe('Pruebas en la función handleDonations', () => {
+describe('Pruebas en la función ´manejadorDonaciones´ ', () => {
   test('deberia llamar `setInitialSate` con un nuevo estado', () => {
     // Arrange
     const values = {

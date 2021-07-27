@@ -15,8 +15,7 @@ export const DataContext = createContext<GlobalContent>({
     personasDonantes: [],
   },
   updateGlobalState: (p: DepartamentosFundacion) => {
-    // eslint-disable-next-line
-    console.log('Hola');
+    return {};
   },
 });
 // eslint-disable-next-line
