@@ -1,13 +1,13 @@
 import { DepartamentosFundacion } from '../models/DepartamentosFundacion';
-import { UserDonator } from '../models/userDonator';
+import { Donante } from '../models/Donante';
 
 const mayorDeEdad = 18;
-const porcentajeNinos = 0.40;
-const porcentajeCaridad = 0.40;
-const porcentajeContruccion = 0.20;
+const porcentajeNinos = 0.4;
+const porcentajeCaridad = 0.4;
+const porcentajeContruccion = 0.2;
 // eslint-disable-next-line
 export const manejadorDonaciones = (
-  usuarioDonante: UserDonator,
+  usuarioDonante: Donante,
   globalState: DepartamentosFundacion,
   setInitialSate: (p: DepartamentosFundacion) => void,
 ) => {
@@ -28,7 +28,8 @@ export const manejadorDonaciones = (
         Number(globalState.caridad) +
         Number(usuarioDonante.cantidadDonada * porcentajeCaridad),
       ninos:
-        Number(globalState.ninos) + Number(usuarioDonante.cantidadDonada * porcentajeNinos),
+        Number(globalState.ninos) +
+        Number(usuarioDonante.cantidadDonada * porcentajeNinos),
       construccion:
         Number(globalState.construccion) +
         Number(usuarioDonante.cantidadDonada * porcentajeContruccion),

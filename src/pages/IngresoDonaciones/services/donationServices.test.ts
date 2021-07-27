@@ -22,13 +22,12 @@ describe('Pruebas en la función handleDonations', () => {
       personasDonantes: [],
     };
     const setInitialSate = jest.fn();
-    
+
     // Act
     manejadorDonaciones(values, globalState, setInitialSate);
     setInitialSate(values);
     // Assert
     expect(manejadorDonaciones).toBeCalledTimes(1);
     expect(setInitialSate).toHaveBeenCalledWith(values);
-    console.log(globalState);
   });
 });

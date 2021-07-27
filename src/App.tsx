@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AppRouter from './routes/AppRouter';
 import { DataContext } from './context/DataContext';
-import { DepartamentosFundacion } from './pages/FormPage/models/DepartamentosFundacion';
+import { DepartamentosFundacion } from './pages/IngresoDonaciones/models/DepartamentosFundacion';
 
 const App: React.FC = () => {
   const [globalState, updateGlobalState] = useState<DepartamentosFundacion>({

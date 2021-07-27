@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { DepartamentosFundacion } from '../pages/FormPage/models/DepartamentosFundacion';
+import { DepartamentosFundacion } from '../pages/IngresoDonaciones/models/DepartamentosFundacion';
 
 export type GlobalContent = {
   globalState: DepartamentosFundacion;

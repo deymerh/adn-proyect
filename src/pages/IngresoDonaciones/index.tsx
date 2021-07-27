@@ -1,8 +1,8 @@
 import React from 'react';
-import { EnvelopeDataEntryForm } from './components/FormData';
+import { IngresoDonaciones } from './components/FormIngresoDonaciones';
 
-const FormPage: React.FC = () => {
-  return <EnvelopeDataEntryForm />;
+const LayoutIngresoDonaciones: React.FC = () => {
+  return <IngresoDonaciones />;
 };
 
-export default FormPage;
+export default LayoutIngresoDonaciones;
