@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext } from 'react';
 import { DepartamentosFundacion } from '../pages/IngresoDonaciones/models/DepartamentosFundacion';
 
 export type GlobalContent = {
@@ -19,4 +19,4 @@ export const DataContext = createContext<GlobalContent>({
   },
 });
 // eslint-disable-next-line
-export const GlobalContext = () => useContext(DataContext);
+//export const DonacionesContext = () => useContext(DataContext);

@@ -19,8 +19,8 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
       >
         <label
-          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-required Mui-required"
-          data-shrink={false}
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
+          data-shrink={true}
           htmlFor="name"
           id="name-label"
         >
@@ -50,13 +50,14 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             onFocus={[Function]}
             required={true}
             type="text"
+            value="Deymer"
           />
           <fieldset
             aria-hidden={true}
             className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6"
+              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
             >
               <span>
                 Nombre
@@ -70,8 +71,8 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
       >
         <label
-          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-required Mui-required"
-          data-shrink={false}
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
+          data-shrink={true}
           htmlFor="id"
           id="id-label"
         >
@@ -99,16 +100,16 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="Ej: 73984419"
             required={true}
             type="number"
+            value={73984410}
           />
           <fieldset
             aria-hidden={true}
             className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6"
+              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
             >
               <span>
                 Identificación
@@ -122,8 +123,8 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
       >
         <label
-          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-required Mui-required"
-          data-shrink={false}
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
+          data-shrink={true}
           htmlFor="cantidadDonada"
           id="cantidadDonada-label"
         >
@@ -151,16 +152,16 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="Ej: 10000"
             required={true}
             type="number"
+            value={10000}
           />
           <fieldset
             aria-hidden={true}
             className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6"
+              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
             >
               <span>
                 Cantidad
@@ -174,8 +175,8 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
       >
         <label
-          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-required Mui-required"
-          data-shrink={false}
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
+          data-shrink={true}
           htmlFor="edad"
           id="edad-label"
         >
@@ -203,16 +204,16 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="Edad del donante. Ej: 18"
             required={true}
             type="number"
+            value={17}
           />
           <fieldset
             aria-hidden={true}
             className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6"
+              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
             >
               <span>
                 Edad
@@ -240,9 +241,9 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="Fecha"
             required={true}
             type="date"
+            value="2021-07-30"
           />
           <fieldset
             aria-hidden={true}

@@ -1,19 +1,19 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, useContext } from 'react';
 import { Typography, TextField, Grid, Button } from '@material-ui/core';
-import { GlobalContext } from '../../../../context/DataContext';
+import { DataContext } from '../../../../context/DataContext';
 import { useStyles } from './styles';
 import { Donante } from '../../models/Donante';
 import * as donationServices from '../../services/donationServices';
 
 export const IngresoDonaciones: React.FC = () => {
   const classes = useStyles();
-  const { globalState, updateGlobalState } = GlobalContext();
+  const { globalState, updateGlobalState } = useContext(DataContext);
   const [usuarioDonante, setUsuarioDonante] = useState<Donante>({
-    nombre: '',
-    id: 1,
-    cantidadDonada: 0,
-    edad: 0,
-    fecha: '',
+    nombre: 'Deymer',
+    id: 73984410,
+    cantidadDonada: 10000,
+    edad: 17,
+    fecha: '2021-07-30',
   });
   const handleInputChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
     setUsuarioDonante({
@@ -46,6 +46,7 @@ export const IngresoDonaciones: React.FC = () => {
               required
               name="nombre"
               onChange={handleInputChange}
+              value={usuarioDonante.nombre}
             />
             <TextField
               className={classes.field}
@@ -57,8 +58,8 @@ export const IngresoDonaciones: React.FC = () => {
               size="small"
               name="id"
               required
-              placeholder="Ej: 73984419"
               onChange={handleInputChange}
+              value={usuarioDonante.id}
             />
             <TextField
               className={classes.field}
@@ -71,7 +72,7 @@ export const IngresoDonaciones: React.FC = () => {
               required
               name="cantidadDonada"
               onChange={handleInputChange}
-              placeholder="Ej: 10000"
+              value={usuarioDonante.cantidadDonada}
             />
             <TextField
               className={classes.field}
@@ -84,7 +85,7 @@ export const IngresoDonaciones: React.FC = () => {
               required
               name="edad"
               onChange={handleInputChange}
-              placeholder="Edad del donante. Ej: 18"
+              value={usuarioDonante.edad}
             />
             <TextField
               className={classes.field}
@@ -96,7 +97,7 @@ export const IngresoDonaciones: React.FC = () => {
               name="fecha"
               required
               onChange={handleInputChange}
-              placeholder="Fecha"
+              value={usuarioDonante.fecha}
             />
             <Button
               className={classes.btn}

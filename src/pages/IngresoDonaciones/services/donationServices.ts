@@ -9,7 +9,7 @@ const porcentajeContruccion = 0.2;
 export const manejadorDonaciones = (
   usuarioDonante: Donante,
   globalState: DepartamentosFundacion,
-  setInitialSate: (p: DepartamentosFundacion) => void,
+  updateGlobalState: (p: DepartamentosFundacion) => void,
 ) => {
   if (usuarioDonante.edad < mayorDeEdad) {
     const nuevoEstado: DepartamentosFundacion = {
@@ -19,7 +19,7 @@ export const manejadorDonaciones = (
       ninos: Number(globalState.ninos) + Number(usuarioDonante.cantidadDonada),
       personasDonantes: [...globalState.personasDonantes, usuarioDonante],
     };
-    setInitialSate(nuevoEstado);
+    updateGlobalState(nuevoEstado);
   } else {
     const nuevoEstado: DepartamentosFundacion = {
       dineroTotal:
@@ -35,6 +35,6 @@ export const manejadorDonaciones = (
         Number(usuarioDonante.cantidadDonada * porcentajeContruccion),
       personasDonantes: [...globalState.personasDonantes, usuarioDonante],
     };
-    setInitialSate(nuevoEstado);
+    updateGlobalState(nuevoEstado);
   }
 };
