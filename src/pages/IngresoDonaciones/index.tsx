@@ -1,8 +1,8 @@
 import React from 'react';
 import { IngresoDonaciones } from './components/FormIngresoDonaciones';
 
-const LayoutIngresoDonaciones: React.FC = () => {
+const ContainerDonaciones: React.FC = () => {
   return <IngresoDonaciones />;
 };
 
-export default LayoutIngresoDonaciones;
+export default ContainerDonaciones;

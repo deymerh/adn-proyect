@@ -18,5 +18,3 @@ export const DataContext = createContext<GlobalContent>({
     return {};
   },
 });
-// eslint-disable-next-line
-//export const DonacionesContext = () => useContext(DataContext);
