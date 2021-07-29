@@ -16,13 +16,11 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
     >
       <div
-        className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
           data-shrink={true}
-          htmlFor="name"
-          id="name-label"
         >
           Nombre
           <span
@@ -42,7 +40,6 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             autoFocus={false}
             className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
-            id="name"
             name="nombre"
             onAnimationStart={[Function]}
             onBlur={[Function]}
@@ -54,10 +51,10 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
           />
           <fieldset
             aria-hidden={true}
-            className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
+              className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
             >
               <span>
                 Nombre
@@ -68,15 +65,13 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         </div>
       </div>
       <div
-        className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
           data-shrink={true}
-          htmlFor="id"
-          id="id-label"
         >
-          Identificación
+          Id
           <span
             aria-hidden={true}
             className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
@@ -94,7 +89,6 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             autoFocus={false}
             className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
-            id="id"
             name="id"
             onAnimationStart={[Function]}
             onBlur={[Function]}
@@ -106,13 +100,13 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
           />
           <fieldset
             aria-hidden={true}
-            className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
+              className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
             >
               <span>
-                Identificación
+                Id
                  *
               </span>
             </legend>
@@ -120,15 +114,13 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         </div>
       </div>
       <div
-        className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
           data-shrink={true}
-          htmlFor="cantidadDonada"
-          id="cantidadDonada-label"
         >
-          Cantidad
+          CantidadDonada
           <span
             aria-hidden={true}
             className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
@@ -146,7 +138,6 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             autoFocus={false}
             className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
-            id="cantidadDonada"
             name="cantidadDonada"
             onAnimationStart={[Function]}
             onBlur={[Function]}
@@ -158,13 +149,13 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
           />
           <fieldset
             aria-hidden={true}
-            className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
+              className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
             >
               <span>
-                Cantidad
+                CantidadDonada
                  *
               </span>
             </legend>
@@ -172,13 +163,11 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         </div>
       </div>
       <div
-        className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
           data-shrink={true}
-          htmlFor="edad"
-          id="edad-label"
         >
           Edad
           <span
@@ -198,7 +187,6 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             autoFocus={false}
             className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
-            id="edad"
             name="edad"
             onAnimationStart={[Function]}
             onBlur={[Function]}
@@ -210,10 +198,10 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
           />
           <fieldset
             aria-hidden={true}
-            className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legendLabelled-6 PrivateNotchedOutline-legendNotched-7"
+              className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
             >
               <span>
                 Edad
@@ -224,8 +212,21 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
         </div>
       </div>
       <div
-        className="MuiFormControl-root MuiTextField-root makeStyles-field-2 MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
       >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled Mui-required Mui-required"
+          data-shrink={true}
+        >
+          Fecha
+          <span
+            aria-hidden={true}
+            className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+          >
+             
+            *
+          </span>
+        </label>
         <div
           className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
           onClick={[Function]}
@@ -235,7 +236,6 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             autoFocus={false}
             className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
-            id="fecha"
             name="fecha"
             onAnimationStart={[Function]}
             onBlur={[Function]}
@@ -247,28 +247,15 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
           />
           <fieldset
             aria-hidden={true}
-            className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
-            style={
-              Object {
-                "paddingLeft": 8,
-              }
-            }
+            className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              className="PrivateNotchedOutline-legend-5"
-              style={
-                Object {
-                  "width": 0.01,
-                }
-              }
+              className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
             >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "&#8203;",
-                  }
-                }
-              />
+              <span>
+                Fecha
+                 *
+              </span>
             </legend>
           </fieldset>
         </div>

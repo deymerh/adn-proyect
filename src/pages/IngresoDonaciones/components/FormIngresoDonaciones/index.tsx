@@ -1,9 +1,10 @@
 import React, { ChangeEvent, useState, useContext } from 'react';
-import { Typography, TextField, Grid, Button } from '@material-ui/core';
+import { Typography, Grid, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../../../../context/DataContext';
 import { useStyles } from './styles';
 import { Donante } from '../../models/Donante';
+import { InputText } from '../Input/index';
 import * as donationServices from '../../services/donationServices';
 
 export const IngresoDonaciones: React.FC = () => {
@@ -36,66 +37,32 @@ export const IngresoDonaciones: React.FC = () => {
       </Typography>
       <Grid justifyContent="center" container item xs={10} md={6}>
         <Grid item md={6} xs={12}>
-          <TextField
-            className={classes.field}
-            fullWidth
-            id="name"
-            label="Nombre"
-            variant="outlined"
-            size="small"
-            required
+          <InputText
+            value={usuarioDonante.nombre}
             name="nombre"
             onChange={handleInputChange}
-            value={usuarioDonante.nombre}
           />
-          <TextField
-            className={classes.field}
-            fullWidth
-            id="id"
-            label="Identificación"
-            type="number"
-            variant="outlined"
-            size="small"
-            name="id"
-            required
-            onChange={handleInputChange}
+          <InputText
             value={usuarioDonante.id}
-          />
-          <TextField
-            className={classes.field}
-            fullWidth
-            id="cantidadDonada"
-            label="Cantidad"
+            name="id"
             type="number"
-            variant="outlined"
-            size="small"
-            required
+            onChange={handleInputChange}
+          />
+          <InputText
+            type="number"
             name="cantidadDonada"
             onChange={handleInputChange}
             value={usuarioDonante.cantidadDonada}
           />
-          <TextField
-            className={classes.field}
-            fullWidth
-            id="edad"
-            label="Edad"
-            variant="outlined"
-            size="small"
+          <InputText
             type="number"
-            required
             name="edad"
             onChange={handleInputChange}
             value={usuarioDonante.edad}
           />
-          <TextField
-            className={classes.field}
-            fullWidth
-            id="fecha"
-            variant="outlined"
-            size="small"
+          <InputText
             type="date"
             name="fecha"
-            required
             onChange={handleInputChange}
             value={usuarioDonante.fecha}
           />

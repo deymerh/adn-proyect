@@ -3,11 +3,10 @@ import { TextField } from '@material-ui/core';
 import { useStyles } from './styles';
 
 export interface InputProps {
-  value: string;
+  value: string | number;
   name: string;
-  zIndex: number;
   type?: string;
-  onChange: () => void;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const InputText: React.FC<InputProps> = ({
@@ -24,6 +23,7 @@ export const InputText: React.FC<InputProps> = ({
       variant="outlined"
       size="small"
       type={type}
+      label={name.charAt(0).toUpperCase() + name.slice(1)}
       name={name}
       required
       onChange={onChange}

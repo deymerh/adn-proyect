@@ -37,7 +37,7 @@ const MostrartDonaciones: React.FC = () => {
               </TableHead>
               <TableBody>
                 {globalState.personasDonantes.map((item) => (
-                  <TableRow key={item.nombre}>
+                  <TableRow key={item.id}>
                     <TableCell component="th" scope="row">
                       {item.nombre}
                     </TableCell>
