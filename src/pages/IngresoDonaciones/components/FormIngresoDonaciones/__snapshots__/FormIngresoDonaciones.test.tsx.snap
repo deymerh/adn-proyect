@@ -7,7 +7,7 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
   <h5
     className="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary"
   >
-    Información de donación
+    Ingresar donación
   </h5>
   <div
     className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-content-xs-center MuiGrid-grid-xs-10 MuiGrid-grid-md-6"

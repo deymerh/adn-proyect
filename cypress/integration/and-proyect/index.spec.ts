@@ -6,7 +6,7 @@ describe('Pruebas en la pagina FormPage', () => {
   })
   
   it('La pagina debe contener el título ´Información de donación´ ', ()=>{
-    cy.contains('Información de donación')
+    cy.contains('Ingresar donación')
   })
   
   it('La pagina debe contener 5 inputs ', ()=>{
@@ -17,12 +17,7 @@ describe('Pruebas en la pagina FormPage', () => {
     cy.get('button').should('have.length', 1)
   })
  
-  it('La pagina debe tener un ´h5´ con el titulo', ()=>{
-    cy.contains('h5', 'Información de donación')
-  })
-  
-  it('Debe quedar el nombre Carlos en el campo de nombre', ()=>{
-    cy.get('#name').clear()
-    cy.get('#name').type('Carlos')
+  it('La pagina debe tener un ´h5´ con el titulo Ingresar donación', ()=>{
+    cy.contains('h5', 'Ingresar donación')
   })
 })

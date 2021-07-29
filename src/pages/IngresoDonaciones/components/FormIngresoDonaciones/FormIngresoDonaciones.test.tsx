@@ -11,7 +11,7 @@ describe('Pruebas en el componente <FormData />', () => {
   });
 
   test('Renderizar el título', () => {
-    expect(page.find('h5').text()).toEqual('Información de donación');
+    expect(page.find('h5').text()).toEqual('Ingresar donación');
   });
 
   test('Validar que existan cinco campos de entrada renderizados', () => {
