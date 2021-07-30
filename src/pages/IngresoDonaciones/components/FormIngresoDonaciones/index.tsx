@@ -79,9 +79,9 @@ export const IngresoDonaciones: React.FC = () => {
         </Grid>
       </Grid>
       {globalState.personasDonantes.length > 0 && (
-        <Link to="/donaciones">
-          <Button size="small">Ver donaciones</Button>
-        </Link>
+        <Button size="small">
+          <Link to="/donaciones">Ver donaciones</Link>
+        </Button>
       )}
     </Grid>
   );

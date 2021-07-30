@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { useStyles } from './styles';
 import { DataContext } from '../../context/DataContext';
 
-const MostrartDonaciones: React.FC = () => {
+const MostrarDonaciones: React.FC = () => {
   const classes = useStyles();
   const { globalState } = useContext(DataContext);
   return (
@@ -90,4 +90,4 @@ const MostrartDonaciones: React.FC = () => {
     </Grid>
   );
 };
-export default MostrartDonaciones;
+export default MostrarDonaciones;

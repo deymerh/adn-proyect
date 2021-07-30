@@ -1,5 +1,5 @@
+import { DonanteInit, Donante } from '../models/Donante';
 import { DepartamentosFundacion } from '../models/DepartamentosFundacion';
-import { Donante } from '../models/Donante';
 
 const mayorDeEdad = 18;
 const porcentajeNinos = 0.4;

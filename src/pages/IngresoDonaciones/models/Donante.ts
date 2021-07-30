@@ -5,3 +5,4 @@ export interface Donante {
   edad: number;
   fecha: string;
 }
+export type DonanteInit = Partial<Donante>;

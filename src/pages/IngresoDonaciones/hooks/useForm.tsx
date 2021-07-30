@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useState } from 'react';
 
 // eslint-disable-next-line
-export function useForm<T>(initialState: T) {
+export function useForm<T>(initialState: T){
   const [values, setValues] = useState(initialState);
 
   const handleInputChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
