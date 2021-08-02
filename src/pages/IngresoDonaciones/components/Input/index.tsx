@@ -3,6 +3,8 @@ import { TextField } from '@material-ui/core';
 import { useStyles } from './styles';
 
 export interface InputProps {
+  error: boolean;
+  helperText: string | boolean;
   value: string | number;
   name: string;
   type?: string;
@@ -14,6 +16,8 @@ export const InputText: React.FC<InputProps> = ({
   onChange,
   name,
   type = 'text',
+  helperText,
+  error,
 }) => {
   const classes = useStyles();
   return (
@@ -28,6 +32,8 @@ export const InputText: React.FC<InputProps> = ({
       required
       onChange={onChange}
       value={value}
+      helperText={helperText}
+      error={error}
     />
   );
 };

@@ -61,6 +61,11 @@ Object {
                     </legend>
                   </fieldset>
                 </div>
+                <p
+                  class="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-filled Mui-required MuiFormHelperText-marginDense"
+                >
+                  El nombre es requerido
+                </p>
               </div>
               <div
                 class="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
@@ -307,6 +312,11 @@ Object {
                   </legend>
                 </fieldset>
               </div>
+              <p
+                class="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-filled Mui-required MuiFormHelperText-marginDense"
+              >
+                El nombre es requerido
+              </p>
             </div>
             <div
               class="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"

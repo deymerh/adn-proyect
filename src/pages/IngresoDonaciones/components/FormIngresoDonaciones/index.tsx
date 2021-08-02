@@ -41,30 +41,49 @@ export const IngresoDonaciones: React.FC = () => {
             value={usuarioDonante.nombre}
             name="nombre"
             onChange={handleInputChange}
+            helperText="El nombre es requerido"
+            error={usuarioDonante.nombre.length <= 1}
           />
           <InputText
             value={usuarioDonante.id}
             name="id"
             type="number"
             onChange={handleInputChange}
+            helperText={
+              usuarioDonante.id.toLocaleString().length <= 5 &&
+              'La identificación es requerido'
+            }
+            error={usuarioDonante.id.toLocaleString().length <= 5}
           />
           <InputText
             type="number"
             name="cantidadDonada"
             onChange={handleInputChange}
             value={usuarioDonante.cantidadDonada}
+            helperText={
+              usuarioDonante.cantidadDonada.toLocaleString().length < 4 &&
+              'Desde $1000 en adelante'
+            }
+            error={usuarioDonante.cantidadDonada.toLocaleString().length < 4}
           />
           <InputText
             type="number"
             name="edad"
             onChange={handleInputChange}
             value={usuarioDonante.edad}
+            helperText={
+              usuarioDonante.edad.toLocaleString().length < 1 &&
+              'Ingrese la edad del donante'
+            }
+            error={usuarioDonante.edad.toLocaleString().length < 1}
           />
           <InputText
             type="date"
             name="fecha"
             onChange={handleInputChange}
             value={usuarioDonante.fecha}
+            helperText={usuarioDonante.fecha.length !== 10 && 'Elija una fecha'}
+            error={usuarioDonante.fecha.length !== 10}
           />
           <Button
             className={classes.btn}

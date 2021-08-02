@@ -1,4 +1,4 @@
-import { DonanteInit, Donante } from '../models/Donante';
+import { Donante } from '../models/Donante';
 import { DepartamentosFundacion } from '../models/DepartamentosFundacion';
 
 const mayorDeEdad = 18;

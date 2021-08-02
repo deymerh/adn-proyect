@@ -63,6 +63,11 @@ exports[`Pruebas en el componente <FormData /> Debe crear el Snapshot del compon
             </legend>
           </fieldset>
         </div>
+        <p
+          className="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-filled Mui-required MuiFormHelperText-marginDense"
+        >
+          El nombre es requerido
+        </p>
       </div>
       <div
         className="MuiFormControl-root MuiTextField-root makeStyles-field-5 MuiFormControl-fullWidth"
