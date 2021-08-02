@@ -5,6 +5,7 @@ import { DataContext } from '../../../../context/DataContext';
 import { useStyles } from './styles';
 import { Donante } from '../../models/Donante';
 import { InputText } from '../Input/index';
+import { Clength } from '../../utils/index';
 import * as donationServices from '../../services/donationServices';
 
 export const IngresoDonaciones: React.FC = () => {
@@ -42,7 +43,7 @@ export const IngresoDonaciones: React.FC = () => {
             name="nombre"
             onChange={handleInputChange}
             helperText="El nombre es requerido"
-            error={usuarioDonante.nombre.length <= 1}
+            error={usuarioDonante.nombre.length <= Clength.nombre}
           />
           <InputText
             value={usuarioDonante.id}
@@ -50,10 +51,10 @@ export const IngresoDonaciones: React.FC = () => {
             type="number"
             onChange={handleInputChange}
             helperText={
-              usuarioDonante.id.toLocaleString().length <= 5 &&
+              usuarioDonante.id.toLocaleString().length <= Clength.id &&
               'La identificación es requerido'
             }
-            error={usuarioDonante.id.toLocaleString().length <= 5}
+            error={usuarioDonante.id.toLocaleString().length <= Clength.id}
           />
           <InputText
             type="number"
@@ -61,10 +62,13 @@ export const IngresoDonaciones: React.FC = () => {
             onChange={handleInputChange}
             value={usuarioDonante.cantidadDonada}
             helperText={
-              usuarioDonante.cantidadDonada.toLocaleString().length < 4 &&
-              'Desde $1000 en adelante'
+              usuarioDonante.cantidadDonada.toLocaleString().length <
+                Clength.cantidadDonada && 'Desde $1000 en adelante'
             }
-            error={usuarioDonante.cantidadDonada.toLocaleString().length < 4}
+            error={
+              usuarioDonante.cantidadDonada.toLocaleString().length <
+              Clength.cantidadDonada
+            }
           />
           <InputText
             type="number"
@@ -82,8 +86,10 @@ export const IngresoDonaciones: React.FC = () => {
             name="fecha"
             onChange={handleInputChange}
             value={usuarioDonante.fecha}
-            helperText={usuarioDonante.fecha.length !== 10 && 'Elija una fecha'}
-            error={usuarioDonante.fecha.length !== 10}
+            helperText={
+              usuarioDonante.fecha.length !== Clength.fecha && 'Elija una fecha'
+            }
+            error={usuarioDonante.fecha.length !== Clength.fecha}
           />
           <Button
             className={classes.btn}
