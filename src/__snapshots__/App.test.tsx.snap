@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en el <AppRouter/> Crear el SnapShot del compoente 1`] = `
+exports[`Texto "Información de mis cuentas"  1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

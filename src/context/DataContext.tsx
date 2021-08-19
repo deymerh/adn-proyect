@@ -1,20 +1,16 @@
 import { createContext } from 'react';
-import { DepartamentosFundacion } from '../pages/IngresoDonaciones/models/DepartamentosFundacion';
+import { CuentasUserArray } from './models';
 
 export type GlobalContent = {
-  globalState: DepartamentosFundacion;
-  updateGlobalState: (p: DepartamentosFundacion) => void;
+  globalState: CuentasUserArray;
+  updateGlobalState: (p: CuentasUserArray) => void;
 };
 
 export const DataContext = createContext<GlobalContent>({
   globalState: {
-    ninos: 0,
-    construccion: 0,
-    caridad: 0,
-    dineroTotal: 0,
-    personasDonantes: [],
+    CuentasUser: [],
   },
-  updateGlobalState: (p: DepartamentosFundacion) => {
+  updateGlobalState: (p: CuentasUserArray) => {
     return {};
   },
 });
