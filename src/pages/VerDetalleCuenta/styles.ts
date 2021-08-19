@@ -14,6 +14,11 @@ export const useStyles = makeStyles(() =>
     },
     a: {
       textDecoration: 'none',
+      marginTop: '20px',
+    },
+    descripcion: {
+      padding: '0 1rem',
+      textAlign: 'center',
     },
     btn: {
       margin: '5px 0px',

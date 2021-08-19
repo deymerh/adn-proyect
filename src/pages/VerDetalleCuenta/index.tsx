@@ -8,17 +8,19 @@ export const VerDetalleCuenta: React.FC = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
-      <Typography className={classes.title}>
+      <Typography variant="h5" className={classes.title}>
         Información de la cuenta
       </Typography>
-      <Grid justifyContent="center" container item xs={10} md={12}>
-        <p>Descripción general de la cuenta...</p>
-        <Link to="/" className={classes.a}>
-          <Button color="primary" size="small" variant="outlined">
-            Volver a mis cuentas
-          </Button>
-        </Link>
+      <Grid justifyContent="center" container>
+        <Typography className={classes.descripcion}>
+          Aqui iría la descripción de la cuenta desde el backend
+        </Typography>
       </Grid>
+      <Link to="/" className={classes.a}>
+        <Button color="primary" size="small" variant="outlined">
+          Volver a mis cuentas
+        </Button>
+      </Link>
     </Grid>
   );
 };
